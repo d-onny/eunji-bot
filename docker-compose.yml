@@ -1,0 +1,11 @@
+version: "3"
+
+services: 
+    bot:
+        build: .
+        name: "bot_container"
+        ports:
+            - "5000:6000"
+        volumes:
+            - ./test:/project/tmp
+        tty: true

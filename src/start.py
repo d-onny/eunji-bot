@@ -1,4 +1,6 @@
-from utils.ReadEnv import ReadEnv
+from Eunji import Eunji
 
 
-print("run")
+if __name__ == "__main__":
+    bot = Eunji()
+    bot._run()

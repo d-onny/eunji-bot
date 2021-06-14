@@ -130,3 +130,5 @@ dmypy.json
 
 bot.config
 **/test
+
+.vscode
