@@ -22,7 +22,9 @@ class Eunji(commands.Bot):
         super().__init__(command_prefix=self.command_prefix, intents=intents)
     
     async def on_message(self, msg):
-        if msg.author.bot:
+        if msg.author.id == self.user.id:
+            return
+        elif msg.author.bot:
             return
         await self.process_commands(msg)
 

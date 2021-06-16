@@ -30,7 +30,11 @@ class General(commands.Cog):
         await ctx.send("where is oppa jeff")
 
     @commands.command()
-    async def jeffuWu(self,ctx) -> None:
+    async def jeff(self, ctx) -> None:
+        await ctx.send("i miss him :(")
+
+    @commands.command()
+    async def jeffuWu(self, ctx) -> None:
         await ctx.send("Oppa Jeff saranghaeyo~!")
 
     @commands.command()
